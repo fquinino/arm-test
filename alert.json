@@ -175,7 +175,7 @@
     },
     "actionGroupId": {
       "type": "string",
-      "defaultValue": "",
+      "defaultValue": "[[concat('/subscriptions/', subscription().Id, '/resourceGroups/', 'rg-amba-monitoring-001', '/providers/microsoft.insights/actionGroups/',subscription().displayName, ' - SH-AMBA Action Group')]",
       "metadata": {
         "description": "The ID of the action group that is triggered when the alert is activated or deactivated"
       }
