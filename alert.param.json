@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "alertName": {
+      "value": "Test Alert"
+    },
+    "location": {
+      "value": "eastus"
+    },
+    "alertDescription": {
+      "value": "New alert created via template"
+    },
+    "alertSeverity": {
+      "value":3
+    },
+    "isEnabled": {
+      "value": true
+    },
+    "resourceId": {
+      "value": "/subscriptions/a249a298-2cc8-4ae8-8a39-1e8473816fff/resourceGroups/rg-azmonitor/providers/Microsoft.Compute/virtualMachines/test-alert"
+    },
+    "query": {
+      "value": "Perf | where ObjectName == \"Processor\" and CounterName == \"% Processor Time\""
+    },
+    "metricMeasureColumn": {
+      "value": "AggregatedValue"
+    },
+    "operator": {
+      "value": "GreaterThan"
+    },
+    "threshold": {
+      "value": "80"
+    },
+    "timeAggregation": {
+      "value": "Average"
+    },
+    "actionGroupId": {
+      "value": "/subscriptions/a249a298-2cc8-4ae8-8a39-1e8473816fff/resourceGroups/rg-amba-monitoring-001/providers/Microsoft.Insights/actiongroups/Azure subscription 1 - SH-AMBA Action Group"
+    }
+  }
+}
