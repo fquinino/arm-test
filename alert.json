@@ -78,12 +78,6 @@
         "description": "Name of the measure column used in the alert evaluation."
       }
     },
-    "resourceIdColumn": {
-      "type": "string",
-      "metadata": {
-        "description": "Name of the resource ID column used in the alert targeting the alerts."
-      }
-    },
     "operator": {
       "type": "string",
       "defaultValue": "GreaterThan",
@@ -208,7 +202,6 @@
             {
               "query": "[parameters('query')]",
               "metricMeasureColumn": "[parameters('metricMeasureColumn')]",
-              "resourceIdColumn": "[parameters('resourceIdColumn')]",
               "dimensions": [],
               "operator": "[parameters('operator')]",
               "threshold": "[parameters('threshold')]",
