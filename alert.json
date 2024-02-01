@@ -46,7 +46,7 @@
     },
     "autoMitigate": {
       "type": "bool",
-      "defaultValue": true,
+      "defaultValue": false,
       "metadata": {
         "description": "Specifies whether the alert will automatically resolve"
       }
