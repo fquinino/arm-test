@@ -227,5 +227,11 @@
         }
       }
     }
-  ]
+  ],
+  "outputs": {
+    "concatOutput": {
+      "type": "string",
+      "value": "[concat('/subscriptions/', subscription().Id, '/resourceGroups/', 'rg-amba-monitoring-001', '/providers/microsoft.insights/actionGroups/',subscription().displayName, ' - SH-AMBA Action Group')]"
+    }
+  }
 }
