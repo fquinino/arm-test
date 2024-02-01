@@ -30,7 +30,7 @@
       "value": "GreaterThan"
     },
     "threshold": {
-      "value": "80"
+      "value": 80
     },
     "timeAggregation": {
       "value": "Average"

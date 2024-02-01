@@ -93,7 +93,7 @@
       }
     },
     "threshold": {
-      "type": "string",
+      "type": "int",
       "metadata": {
         "description": "The threshold value at which the alert is activated."
       }
