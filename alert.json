@@ -169,6 +169,7 @@
         "PT12H",
         "PT24H"
       ],
+      "defaultValue": "PT5M",
       "metadata": {
         "description": "Mute actions for the chosen period of time (in ISO 8601 duration format) after the alert is fired."
       }
