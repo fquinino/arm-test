@@ -175,7 +175,7 @@
     },
     "actionGroupId": {
       "type": "string",
-      "defaultValue": "[concat('/subscriptions/', subscription().Id, '/resourceGroups/', 'rg-amba-monitoring-001', '/providers/microsoft.insights/actionGroups/',subscription().displayName, ' - SH-AMBA Action Group')]",
+      "defaultValue": "[concat(subscription().Id, '/resourceGroups/', 'rg-amba-monitoring-001', '/providers/microsoft.insights/actionGroups/',subscription().displayName, ' - SH-AMBA Action Group')]",
       "metadata": {
         "description": "The ID of the action group that is triggered when the alert is activated or deactivated"
       }
@@ -218,7 +218,7 @@
         "checkWorkspaceAlertsStorageConfigured": "[parameters('checkWorkspaceAlertsStorageConfigured')]",
         "actions": {
           "actionGroups": [
-            "[[concat('/subscriptions/', subscription().Id, '/resourceGroups/', 'rg-amba-monitoring-001', '/providers/microsoft.insights/actionGroups/',subscription().displayName, ' - SH-AMBA Action Group')]"
+            "[[concat(subscription().Id, '/resourceGroups/', 'rg-amba-monitoring-001', '/providers/microsoft.insights/actionGroups/',subscription().displayName, ' - SH-AMBA Action Group')]"
           ],
           "customProperties": {
             "key1": "value1",
@@ -231,7 +231,7 @@
   "outputs": {
     "concatOutput": {
       "type": "string",
-      "value": "[concat('/subscriptions/', subscription().Id, '/resourceGroups/', 'rg-amba-monitoring-001', '/providers/microsoft.insights/actionGroups/',subscription().displayName, ' - SH-AMBA Action Group')]"
+      "value": "[concat(subscription().Id, '/resourceGroups/', 'rg-amba-monitoring-001', '/providers/microsoft.insights/actionGroups/',subscription().displayName, ' - SH-AMBA Action Group')]"
     }
   }
 }
