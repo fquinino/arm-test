@@ -21,7 +21,7 @@
       "value": "/subscriptions/a249a298-2cc8-4ae8-8a39-1e8473816fff/resourceGroups/rg-azmonitor/providers/Microsoft.Compute/virtualMachines/test-alert"
     },
     "query": {
-      "value": "Perf | where ObjectName == \"Processor\" and CounterName == \"% Processor Time\""
+      "value": "InsightsMetrics| where Origin == \"vm.azm.ms\"| where Namespace == \"Processor\" and Name == \"UtilizationPercentage\"| summarize AggregatedValue = avg(Val) by bin(TimeGenerated, 15m), Computer, _ResourceId"
     },
     "metricMeasureColumn": {
       "value": "AggregatedValue"
