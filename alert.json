@@ -218,7 +218,7 @@
         "checkWorkspaceAlertsStorageConfigured": "[parameters('checkWorkspaceAlertsStorageConfigured')]",
         "actions": {
           "actionGroups": [
-            "[parameters('actionGroupId')]"
+            "[[concat(subscription().Id, '/resourceGroups/', 'rg-amba-monitoring-001', '/providers/microsoft.insights/actionGroups/',subscription().displayName, ' - SH-AMBA Action Group')]"
           ],
           "customProperties": {
             "key1": "value1",
